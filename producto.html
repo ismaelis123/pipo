@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda Deportiva</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#zapatos">Zapatos</a></li>
+                <li><a href="#camisetas">Camisetas</a></li>
+                <li><a href="#rodilleras">Rodilleras</a></li>
+                <li><a href="#cintas">Cinta de Capitán</a></li>
+                <li><a href="#trajes">Trajes</a></li>
+                <li><a href="#balones">Balones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacion">
+            <h2>Información de Productos</h2>
+            <p>Encuentra todo lo que necesitas para jugar fútbol en un solo lugar. Ofrecemos una amplia gama de productos de alta calidad, desde zapatos y camisetas hasta rodilleras y balones. Nuestro objetivo es proporcionar a los jugadores el mejor equipo para que puedan disfrutar del deporte con comodidad y estilo.</p>
+        </section>
+        <section id="zapatos" class="producto-seccion" style="display:none;">
+            <h2>Zapatos para Jugar Fútbol</h2>
+            <div class="producto">
+                <img src="ruta-a-imagen-zapatos.jpg" alt="Zapatos de fútbol">
+                <p>Zapatos de Fútbol - $50</p>
+                <button onclick="agregarAlCarrito('Zapatos de Fútbol', 50)">Añadir al Carrito</button>
+            </div>
+        </section>
+        <section id="camisetas" class="producto-seccion" style="display:none;">
+            <h2>Camisetas de Fútbol</h2>
+            <div class="producto">
+                <img src="ruta-a-imagen-camisetas.jpg" alt="Camisetas de fútbol">
+                <p>Camiseta de Fútbol - $30</p>
+                <button onclick="agregarAlCarrito('Camiseta de Fútbol', 30)">Añadir al Carrito</button>
+            </div>
+        </section>
+        <section id="rodilleras" class="producto-seccion" style="display:none;">
+            <h2>Rodilleras</h2>
+            <div class="producto">
+                <img src="ruta-a-imagen-rodilleras.jpg" alt="Rodilleras">
+                <p>Rodilleras - $20</p>
+                <button onclick="agregarAlCarrito('Rodilleras', 20)">Añadir al Carrito</button>
+            </div>
+        </section>
+        <section id="cintas" class="producto-seccion" style="display:none;">
+            <h2>Cinta de Capitán</h2>
+            <div class="producto">
+                <img src="ruta-a-imagen-cintas.jpg" alt="Cinta de Capitán">
+                <p>Cinta de Capitán - $10</p>
+                <button onclick="agregarAlCarrito('Cinta de Capitán', 10)">Añadir al Carrito</button>
+            </div>
+        </section>
+        <section id="trajes" class="producto-seccion" style="display:none;">
+            <h2>Trajes</h2>
+            <div class="producto">
+                <img src="ruta-a-imagen-trajes.jpg" alt="Trajes deportivos">
+                <p>Traje Deportivo - $40</p>
+                <button onclick="agregarAlCarrito('Traje Deportivo', 40)">Añadir al Carrito</button>
+            </div>
+        </section>
+        <section id="balones" class="producto-seccion" style="display:none;">
+            <h2>Balones</h2>
+            <div class="producto">
+                <img src="ruta-a-imagen-balones.jpg" alt="Balones de fútbol">
+                <p>Balón de Fútbol - $25</p>
+                <button onclick="agregarAlCarrito('Balón de Fútbol', 25)">Añadir al Carrito</button>
+            </div>
+        </section>
+        <aside id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="contenido-carrito"></div>
+            <p id="total">Total: $0</p>
+            <button onclick="comprar()">Comprar</button>
+        </aside>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy; 2024 Tienda Deportiva</p>
+    </footer>
+    <script src="/js/scritp.js"></script>
+</body>
+</html>
